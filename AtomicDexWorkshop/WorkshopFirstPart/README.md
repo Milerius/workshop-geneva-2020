@@ -6,7 +6,7 @@ For the first part of this workshop, it is simply a matter of properly configuri
 
 - Please download the latest mm2 archive at this link: http://195.201.0.6/mm2/mm2-latest-Windows_NT.zip
 - Unzip the folder
-- Create a powershell script next to the mm2 executable (.ps1 file) with the following content
+- Create a powershell script next to the mm2 executable (i named it launch.ps1) with the following content
 
 ```pwsh
  .\mm2.exe '{\"gui\": \"MM2GUI\", \"netid\":9999,\"passphrase\":\"Geneva2020Seed\",\"rpc_password\":\"your_passphrase_here\"}'
@@ -22,6 +22,7 @@ You should have the following tree:
 .
 ├── mm2
 │  ├── coins
+│  ├── launch.ps1
 │  ├── mm2-latest-Windows_NT.zip
 │  ├── mm2.exe
 │  ├── msvcp140.dll
