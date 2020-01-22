@@ -34,5 +34,17 @@ You should have the following tree:
 └── WorkshopFirstPart.csproj
 ```
 
+`dotnet build` and `dotnet run` should work, the last command should produce the following output:
+
+```
+PS C:\Users\romanszterg\RiderProjects\workshop-geneva-2020\AtomicDexWorkshop\WorkshopFirstPart> dotnet run
+Hello World!
+```
+
+And now we are going to launch mm2, to do this we open the file explorer and launch powershell in the mm2 folder:
+
+
+
+
 
 
