@@ -9,11 +9,11 @@ namespace WorkshopSecondPart
     {
         private static readonly HttpClient Client = new HttpClient();
         
-        public static async Task<string> ProcessElectrum(string rick, Server[] servers)
+        public static async Task<string> ProcessElectrum(string ticker, Server[] servers)
         {
             var req = new ElectrumRequest
             {
-                Coin = rick,
+                Coin = ticker,
                 Servers = servers,
                 Method = "electrum",
                 Userpass = "your_passphrase_here"
