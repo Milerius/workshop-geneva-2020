@@ -2,7 +2,7 @@
 
 namespace WorkshopSecondPart
 {
-    public partial class Welcome
+    public partial class ElectrumAnswer
     {
         [JsonProperty("address", Required = Required.Always)]
         public string Address { get; set; }
@@ -23,13 +23,13 @@ namespace WorkshopSecondPart
         public string Result { get; set; }
     }
 
-    public partial class Welcome
+    public partial class ElectrumAnswer
     {
-        public static Welcome FromJson(string json) => JsonConvert.DeserializeObject<Welcome>(json, Converter.Settings);
+        public static ElectrumAnswer FromJson(string json) => JsonConvert.DeserializeObject<ElectrumAnswer>(json, Converter.Settings);
     }
 
     public static partial class Serialize
     {
-        public static string ToJson(this Welcome self) => JsonConvert.SerializeObject(self, Converter.Settings);
+        public static string ToJson(this ElectrumAnswer self) => JsonConvert.SerializeObject(self, Converter.Settings);
     }
 }

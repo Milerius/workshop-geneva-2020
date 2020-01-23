@@ -17,7 +17,7 @@ namespace WorkshopSecondPart
         public Server[] Servers { get; set; }
     }
 
-    public partial class Server
+    public class Server
     {
         [JsonProperty("url")]
         public string Url { get; set; }
