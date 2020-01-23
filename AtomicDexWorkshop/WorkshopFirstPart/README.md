@@ -2,6 +2,8 @@
 
 For the first part of this workshop, it is simply a matter of properly configuring your project using the `dotnet` command line
 
+Configure a basic project following this tutorial: https://code.visualstudio.com/docs/languages/dotnet
+
 ## AtomicDex / MM2
 
 - Please download the latest mm2 archive at this link: http://195.201.0.6/mm2/mm2-latest-Windows_NT.zip

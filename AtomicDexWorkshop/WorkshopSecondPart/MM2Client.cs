@@ -9,17 +9,12 @@ namespace WorkshopSecondPart
     {
         private static readonly HttpClient Client = new HttpClient();
         
-        public static async Task<string> ProcessElectrum()
+        public static async Task<string> ProcessElectrum(string rick, Server[] servers)
         {
             var req = new ElectrumRequest
             {
-                Coin = "RICK",
-                Servers = new Server[]
-                {
-                    new Server {Url = "electrum1.cipig.net:10017"},
-                    new Server {Url = "electrum2.cipig.net:10017"},
-                    new Server {Url = "electrum3.cipig.net:10017"}
-                },
+                Coin = rick,
+                Servers = servers,
                 Method = "electrum",
                 Userpass = "your_passphrase_here"
             };
