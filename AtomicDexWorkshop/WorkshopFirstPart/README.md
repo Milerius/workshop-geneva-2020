@@ -1,4 +1,4 @@
-# Workshop part 0
+# Workshop part 1
 
 For the first part of this workshop, it is simply a matter of properly configuring your project using the `dotnet` command line
 
