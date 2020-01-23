@@ -55,5 +55,32 @@ namespace WorkshopThirdPart
 
             return await ProcessRequest(req.ToJson());
         }
+
+        public static async Task<string> ProcessWithdraw(string ticker, string amount, string destination)
+        {
+            var req = new WithdrawRequest
+            {
+                Coin = ticker,
+                Amount = amount,
+                To = destination,
+                Method = "withdraw",
+                Userpass = "your_passphrase_here"
+            };
+
+            return await ProcessRequest(req.ToJson());
+        }
+
+        public static async Task<string> ProcessSendRawTransaction(string coin, string txHex)
+        {
+            var req = new SendRawTransactionRequest
+            {
+                Coin = coin,
+                TxHex = txHex,
+                Method = "send_raw_transaction",
+                Userpass = "your_passphrase_here"
+            };
+
+            return await ProcessRequest(req.ToJson());
+        }
     }
 }

@@ -1,6 +1,6 @@
 # Workshop part 3
 
-In this part we will add `orderbook`, `my_balance` rpc call
+In this part we will add `orderbook`, `my_balance`, `withdraw` and `send_raw_transaction` rpc call
 
 ## Architecture
 
