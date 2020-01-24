@@ -47,7 +47,7 @@ namespace WorkshopThirdPart
                 responseBody = await MM2Client.ProcessSendRawTransaction(withdrawAnswer.Coin, withdrawAnswer.TxHex);
                 Console.WriteLine(responseBody);
             }
-            catch (Newtonsoft.Json.JsonSerializationException e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
